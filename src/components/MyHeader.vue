@@ -106,7 +106,6 @@ header {
 header nav {
     font-size: 0.7rem;
     margin: 0 auto;
-    width: 1000px;
     height:100px;
     color: white;
     display: flex;
@@ -147,6 +146,9 @@ header nav .link img {
     margin-top: 20px;
 }
 
+.right-nav {
+  margin-right: 15px;
+}
 .right-nav a img{
     filter: invert(100%);
     margin-right: 20px;
