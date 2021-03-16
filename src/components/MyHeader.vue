@@ -31,22 +31,9 @@
 
     <!-- slice + slider =  -->
     <slider class="hooper"/>
-    <div class="header-bot">
-      <ul class='flex-center'>
-        <li v-for='(image, index) in images' :key="index">
-          <div class="flip-card">
-            <div class="flip-card-inner flex-center">
-              <div class="img1">
-                <img :src="'img/' + image + '.jpg'" alt="Header Images">
-              </div>
-              <div class="img2 flex-center">
-                <i class="fas fa-eye fa-2x flex-center"></i>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
+
+
+    
   </header>
 </template>
 <script>
@@ -64,8 +51,7 @@ export default {
       links: [
         ["HOME", "PAGES", "MENU"],
         ["EVENT", "BLOG", "LANDING"],
-      ],
-      images: ['h3-img-1', 'h3-img-2', 'h3-img-3', 'h3-img-4']
+      ]
     };
   },
 };
@@ -170,10 +156,6 @@ header nav .link img {
     margin-right:20px;
 }
 
-
-.header-bot {
-  margin-top: 55px;
-}
 
 .header-bot ul li {
   width: 25%;

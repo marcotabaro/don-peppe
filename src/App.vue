@@ -4,18 +4,22 @@
       <slider slot="slider">
       </slider>
     </MyHeader>
+    <MyMain>
+    </MyMain>
   </div>
 </template>
 
 <script>
 import MyHeader from './components/MyHeader.vue'
 import slider from './components/Slider.vue'
+import MyMain from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
-    slider
+    slider,
+    MyMain
   }
 }
 </script>
