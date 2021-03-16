@@ -4,8 +4,8 @@
       <slider slot="slider">
       </slider>
     </MyHeader>
-    <MyMain>
-    </MyMain>
+    <MyMain/>
+    <MyFooter/>
   </div>
 </template>
 
@@ -13,13 +13,15 @@
 import MyHeader from './components/MyHeader.vue'
 import slider from './components/Slider.vue'
 import MyMain from './components/Main.vue'
+import MyFooter from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     MyHeader,
     slider,
-    MyMain
+    MyMain,
+    MyFooter,
   }
 }
 </script>
