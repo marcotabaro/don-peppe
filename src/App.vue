@@ -9,7 +9,7 @@
 
 <script>
 import MyHeader from './components/MyHeader.vue'
-import slider from './components/slider.vue'
+import slider from './components/Slider.vue'
 
 export default {
   name: 'App',

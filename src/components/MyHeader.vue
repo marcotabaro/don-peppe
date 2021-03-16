@@ -51,7 +51,7 @@
 </template>
 <script>
 
-import slider from "./slider.vue";
+import slider from "./Slider.vue";
 export default {
   name: "MyHeader",
   components: {

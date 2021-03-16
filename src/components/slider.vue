@@ -10,7 +10,9 @@
 </template>
 
 <script>
-import { Hooper,
+
+import { 
+Hooper,
 Slide,
 Navigation as HooperNavigation } from 'hooper';
 import 'hooper/dist/hooper.css';
