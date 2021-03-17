@@ -376,7 +376,7 @@ export default {
     height: 25%;
     background-image: url(../../public/img/h3-background-img.jpg);
     background-size: 100% 700px;
-    background-position: 0px 310px;
+    background-position: 0px 310px;   
 
 }
 
