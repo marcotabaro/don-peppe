@@ -17,6 +17,9 @@
       </ul>
     </div>
         <div class="slider flex-center">
+            <div class="button prev-btn flex-center">
+                <a href="#">PREV</a>
+            </div>
             <i class="fas fa-quote-left"></i>
             <div class='quote'>
                 <span>"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</span>
@@ -26,6 +29,9 @@
             </div>
             <div class='mydots flex-center'>
                 <i v-for="dot, index in dots" :key="index" class="fas fa-circle"></i>
+            </div>
+            <div class="button next-btn flex-center">
+                <a href="#">NEXT</a>
             </div>
         </div>
 
@@ -64,7 +70,6 @@
                 <div class="second"></div>
                 <div class="third"></div>
             </div>
-            
         </div>
 
         <div class="team">
@@ -235,6 +240,7 @@ export default {
     height: 300px;
     background-image: url(../../public/img/h3-testimonials-bckgrnd.jpg);
     background-size: cover;
+    background-position: center;
     flex-flow: column nowrap;
 }
 
@@ -261,6 +267,28 @@ export default {
     margin-left: 5px;
     font-size: .6rem;
     color: lightgrey;
+}
+
+.button {
+    background-color: white;
+    width:60px;
+    height:25px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+    font-size:.6rem;
+    color: #d65739;
+}
+
+.prev-btn {
+    position:absolute;
+    left:-15px;
+    transform: rotate(90deg);
+}
+
+.next-btn {
+    position:absolute;
+    right:-15px;
+    transform: rotate(-90deg);
 }
 
 /* MENU SECTION */
@@ -321,22 +349,21 @@ export default {
 .goahead .center .first {
     height: 25%;
     background-image: url(../../public/img/h3-background-img.jpg);
-    background-size: cover;
+    background-size: 100% 500px;
     background-position: bottom;
 }
 
 .goahead .center .second {
     height: 50%;
     background-image: url(../../public/img/h3-background-img.jpg);
-    background-size: cover;
-    background-position-y: 200vh;
+    background-size: 100% 550px;
 }
 
 .goahead .center .third {
     height: 25%;
     background-image: url(../../public/img/h3-background-img.jpg);
-    background-size: cover;
-    background-position-y: 50vh;
+    background-size: 100% 700px;
+    background-position: center;
 }
 
 .goahead .left .first,
