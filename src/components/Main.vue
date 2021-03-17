@@ -61,6 +61,9 @@
                 <div class="third"></div>
             </div>
             <div class="center">
+                <div class="float-title">
+                    <h1>GO AHEAD AND BUILD YOUR OWN PIZZA <br> WE WON'T JUDGE!</h1>
+                </div>
                 <div class="first"></div>
                 <div class="second"></div>
                 <div class="third"></div>
@@ -329,7 +332,16 @@ export default {
 .goahead {
     height: 350px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row nowrap;    
+}
+
+.float-title {
+    position:absolute;
+    left: 230px;
+    top: 75px;
+    width: 250px;
+    text-align:left;
+    color: white;
 }
 
 .left {
@@ -339,6 +351,7 @@ export default {
 
 .center {
     width: 86%;
+    position:relative;
 }
 
 .right {
@@ -363,7 +376,8 @@ export default {
     height: 25%;
     background-image: url(../../public/img/h3-background-img.jpg);
     background-size: 100% 700px;
-    background-position: center;
+    background-position: 0px 310px;
+
 }
 
 .goahead .left .first,
