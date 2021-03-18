@@ -444,7 +444,7 @@ export default {
     width:100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 0.6s;
     transform-style: preserve-3d;
 }
 
@@ -466,10 +466,11 @@ export default {
 }
 
 .card-back {
-    background-color:radial-gradient(#d1d4d8 1px,transparent 1px), radial-gradient(#d1d4d8 1px,transparent 1px);
-
-  color: white;
-  transform: rotateY(180deg);
+    background-image:radial-gradient(#d1d4d8 1px,transparent 1px), radial-gradient(#d1d4d8 1px,transparent 1px);
+    background-size:12px 12px;
+    background-position: 0 0,6px 6px;
+    color: white;
+    transform: rotateY(180deg);
 }
 
 .back-orange p {
@@ -551,6 +552,7 @@ export default {
 }
 .slider-bot ul li:hover {
     transform: scale(1.5);
+    cursor: pointer;
 }
 
 @keyframes rotate {

@@ -206,7 +206,9 @@ header nav .link img {
   transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABZJREFUeNpi2r9//38gYGAEESAAEGAAasgJOgzOKCoAAAAASUVORK5CYII=);
+  background-image:radial-gradient(#d1d4d8 1px,transparent 1px), radial-gradient(#d1d4d8 1px,transparent 1px);
+  background-size:12px 12px;
+  background-position: 0 0,6px 6px;
 }
 
 .fa-eye {
