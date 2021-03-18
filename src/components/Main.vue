@@ -78,7 +78,24 @@
         <div class="team">
             <ul>
                 <li v-for='worker, index in team' :key="index">
-                    <img :src="'img/' + worker.pic + '.jpg'" alt="Staff Images">
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img :src="'img/' + worker.pic + '.jpg'" alt="Staff Images">   
+                            </div>
+                            <div class="card-back">
+                                <div class="back-orange">
+                                    <h1>{{worker.name}}</h1>
+                                    <p>{{worker.role}}</p>
+                                    <div class="social">
+                                        <i class="fab fa-instagram"></i>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -402,7 +419,9 @@ export default {
 }
 
 /* Team */
-
+.team {
+    height: 350px;
+}
 .team ul li {
     width: 25%;
     padding: 5px 0;
@@ -411,6 +430,65 @@ export default {
 .team ul li img {
     height: 335px;
     width: 100%;
+}
+
+.card {
+    background-color: transparent;
+    height: 335px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.card-inner {
+    position:relative;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.card-back {
+    background-color:radial-gradient(#d1d4d8 1px,transparent 1px), radial-gradient(#d1d4d8 1px,transparent 1px);
+
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.back-orange p {
+    margin: 10px 10px;
+}
+
+.social i {
+    margin: 15px 15px;
+}
+
+.back-orange {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: 34px auto;
+    background-color: #D23F1D;
 }
 
 /* Clients */
@@ -464,8 +542,20 @@ export default {
 }
 
 .slider-bot ul li img{
+    animation: rotate 10s linear infinite;
     width: 150px;
     margin: 15px 50px;
+}
+.slider-bot ul li {
+    transition: 1s;
+}
+.slider-bot ul li:hover {
+    transform: scale(1.5);
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg); }
+    100% {transform: rotate(360deg);}
 }
 
 .slider-bot ul li {
