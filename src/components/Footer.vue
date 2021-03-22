@@ -1,6 +1,6 @@
 <template>
   <footer>
-        <div class="contacts flex-center">
+        <div class="contacts">
             <div class="footer-left">
                 <h4>FIND OUR RESTAURANTS</h4>
             <ul>
@@ -86,6 +86,9 @@ footer {
 .contacts {
     width: 50%;
     background-color: #1b1b1b;
+    padding-top: 100px;
+    display: flex;
+    text-align:left;
 }
 
 .contacts ul li,
@@ -96,13 +99,29 @@ footer {
     font-size: .7rem;
 }
 
+.footer-left {
+    margin:0 30px;
+}
+
+.footer-right {
+    margin-right: 50px;
+}
+
 
 .contacts ul li span{
     display: block;
 }
 
-.footer-title {
-    width: 200px;
-    justify-self: flex-start;
+.contacts .footer-left h4,
+.contacts .footer-right h4 {
+    color: #B7903C;
 }
+
+
+.footer-title {
+    width: 195px;
+    color:white;
+}
+
+
 </style>
