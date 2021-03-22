@@ -20,7 +20,7 @@
             <div class="button prev-btn flex-center">
                 <a href="#">PREV</a>
             </div>
-            <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-left"></i>
             <div class='quote'>
                 <span>"FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES"</span>
             </div>
