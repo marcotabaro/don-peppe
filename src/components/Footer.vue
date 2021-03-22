@@ -24,7 +24,7 @@
                     <h4 class='footer-title'>THE DON PEPPE CREW FIRST AND FOREMOST VALUES AN AUTHENTIC, WELL BAKED SLICE OF PIZZA.</h4>
                 </div>
         </div>
-        <img src="img/footer-img-1.jpg" alt="Footer image">
+        <div class="footer-img"></div>
     </footer>
 </template>
 
@@ -74,10 +74,14 @@ footer {
     display: flex;
 }
 
-footer img {
+.footer-img {
     height: 400px;
     width: 50%;
+    background-image: url("../../public/img/footer-img-1.jpg");
+    background-size: cover;
+    background-position: center;
 }
+
 
 .contacts {
     width: 50%;
