@@ -16,12 +16,14 @@
         </li>
       </ul>
     </div>
+
+        
         <div class="slider flex-center">
             <div class="button prev-btn flex-center">
                 <a href="#">PREV</a>
             </div>
                 <i class="fas fa-quote-left"></i>
-            <div class="feedback" v-for='feed in feedback.currentIndex' :key='feed.id'>
+            <div class="feedback" v-for='feed in feedback' :key='feed.id'>
                 <div class='quote'>
                     <span> {{ feed.quote }}</span>
                 </div>
@@ -178,22 +180,14 @@
 <script>
 export default {
     name: "MyMain",
-    components: {
-
-    },
     data() {
         return {
-            currentIndex: 0,
             images: ['h3-img-1', 'h3-img-2', 'h3-img-3', 'h3-img-4'],
             feedback: [
                 {
                     quote: 'FORGET THE TRENDY PIZZA SHOPS, THIS HIDDEN SPOT MAKES THE BEST NEW YORK-STYLE PIZZA SLICE IN NAPLES',
                     source: 'WASHINGTON POST 2020',
                 },
-                {
-                    quote: 'lorem ipsum',
-                    source: 'test',
-                }
             ],
             dots: 3,
         team: [
@@ -263,7 +257,6 @@ export default {
     },
 };
 
-
 </script>
 
 <style>
@@ -301,6 +294,10 @@ export default {
     margin-left: 5px;
     font-size: .6rem;
     color: lightgrey;
+}
+
+.mydots i:first-of-type {
+    color:black !important;
 }
 
 .button {
