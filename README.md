@@ -1,1 +1,1 @@
-![](screen-capture.gif)
+![](screen-capture.gif | width=100)
