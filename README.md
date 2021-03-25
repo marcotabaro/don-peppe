@@ -1,3 +1,6 @@
+![](screen-capture.gif)
+
+
 # slider
 
 ## Project setup
